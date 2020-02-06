@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0,viewport-fit=cover" />
+		<title>ETH Player</title>
+		<link rel="icon" type="image/x-icon" href="./img/favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="./css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" >
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.3/jquery-confirm.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+	</head>
+	<body>
+		<nav class="header">
+			<div class="box">
+				<img src="img/logo.png" />
+				<ul>
+					<li data-text="ETHPLAY_language_text01" >游戏介绍</li>
+					<li data-text="ETHPLAY_language_text02">立即参与</li>
+					<li data-text="ETHPLAY_language_text03">数据统计</li>
+					<li class="language"><img src="img/en.png" />&nbsp;English</li>
+				</ul>
+				
+			</div>
+			
+			<div class="language languageYuan">
+				EN
+			</div>
+			
+			<div class="headerLine">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			
+			<ul class="headerLineList">
+				<li data-text="ETHPLAY_language_text01" >游戏介绍</li>
+				<li data-text="ETHPLAY_language_text02">立即参与</li>
+				<li data-text="ETHPLAY_language_text03">数据统计</li>
+				<!-- <li data-text="ETHPLAY_language_text177" class="HrefAnnouncement" >公告</li> -->
+			</ul>
+		</nav>
+		<div id="dowebok">
+			
+			<div class="shouping section">
+				<div class="shoupingBox">
+					<img src="img/shoupingLogo.png" />
+					<img src="img/ethText.png" />
+					<h1 data-text="ETHPLAY_language_text04" data-textType="html">一个去中心化的链上游戏系统</h1>
+					<p data-text="ETHPLAY_language_text05">公开·公平·公正·安全</p>
+					<!-- <img src="img/shoupingText01.png" /> -->
+					<div class="shoupingbuttonBox">
+						<button class="hrefCanyu"><img src="img/playGameButton01.png"/><span data-text="ETHPLAY_language_text06">参与游戏</span></button>
+						<button class="videoBut"><img src="img/playGameButton02.png"/><span data-text="ETHPLAY_language_text07" data-textType="html" >视频教学</span></button>
+					</div>
+					<div class="shoupingGameRule">
+						<div class="BoxTitie">
+							<span  data-text="ETHPLAY_language_text01">游戏介绍</span>
+							<div class="titleLine"></div>
+						</div>
+						<div class="box" data-text="ETHPLAY_language_text08">ETH Player（以太风云）是一款基于以太坊智能合约而构建的公开、透明、全自动运行的去中心化链上理财游戏。位于全球任意位置的玩家，通过一把私钥即可自由参与游戏，任何个人或机构都不能操控系统的运行或掌控系统内的资金。</div>
+					</div>
+				</div>
+			</div>
+			<div class="playContent section">
+				<div class="GameContent">
+					<div class="PlayGameContent box">
+						<div class="BoxTitie">
+							<span id="PlayGameContent" data-text="ETHPLAY_language_text06">参与游戏</span>
+							<div class="titleLine"></div>
+						</div>
+						<ul>
+							<li class="PlayGameListActive" data-text="ETHPLAY_language_text09">参与</li>
+							<li data-text="ETHPLAY_language_text10">EPK</li>
+							<li data-text="ETHPLAY_language_text11">收益</li>
+							<li data-text="ETHPLAY_language_text12">我的</li>
+						</ul>
+						<div class="PlayGameContent01 borderR">
+							<div class="PlayGameContent01-01">
+								<ul class="">
+									<li><div><img src="img/PlayGameContent01-01Img01.png"/><span data-text="ETHPLAY_language_text136">参与额度</span></div><div>0 ETH</div></li>
+									<li><div><img src="img/PlayGameContent01-01Img02.png"/><span data-text="ETHPLAY_language_text137">循环余额</span></div><div>0 ETH</div></li>
+									<li><div><img src="img/PlayGameContent01-01Img03.png"/><span data-text="ETHPLAY_language_text138">累计参与</span></div><div>0 ETH</div></li>
+								</ul>
+								<div class="Content01Number">
+									<div>
+										<img src="img/Content02WalletBottom01.png" />
+										<span class="eth">0.0000</span>
+										<span>ETH</span>
+									</div>
+									<div>
+										<img src="img/Content02WalletBottom02.png" />
+										<span class="epc">0.0000</span>
+										<span>EPK</span>
+									</div>
+								</div>
+								<div class="Content01Input">
+									<input type="text" placeholder="请输入参与数量"  data-text="ETHPLAY_language_text139"  data-textType="placeholder" />
+									<span>ETH</span>
+								</div>
+								<div class="Content01InputSelect">
+									<span  data-text="ETHPLAY_language_text140">快速参与</span>
+									<ul>
+										<li data-number="1">1 ETH</li>
+										<!-- <li data-number="5">5 ETH</li> -->
+										<li data-number="10">10 ETH</li>
+										<!-- <li data-number="15">15 ETH</li> -->
+										<li data-number="20">20 ETH</li>
+									</ul>
+								</div>
+								<div class="fuel">
+									<span data-text="ETHPLAY_language_text250">消耗燃料: </span>
+									<span>0</span>
+									<span> EPK</span>
+								</div>
+								<button data-text="ETHPLAY_language_text09">参与</button>
+								<div class="Content01Radio" data-GameRule="false">
+									<div></div>
+									<span  data-text="ETHPLAY_language_text141">我已阅读游戏规则，并同意该规则</span>
+								</div>
+							</div>
+							<!--<div class="PlayGameContent01-02">
+								<div class="imgRight">							
+									<img src="img/Re.png" />
+								</div>
+								<span class="GameEule" data-text="ETHPLAY_language_text13">游戏规则:</span>
+								<p class="GameEuleDescription" data-textType="html" data-text="ETHPLAY_language_text14">
+									1、15天为一个周期，一个周期收益为18%，同时退还参与ETH的40%；<br />
+									2、首轮可参与1-10ETH,每轮可多参与5ETH，单轮最大可参与60ETH;<br />
+									3、每次参与后需间隔15天才能再次参与，再次参与才能启动下一轮；<br /></p>
+								<div class="Unlock" data-text="ETHPLAY_language_text15">
+									首次参与游戏，需消耗60 风云令（EPK）解锁账号
+								</div>
+								<button data-text="ETHPLAY_language_text65">解锁账户</button>
+							</div>-->
+							<div class="PlayGameContent01-03">
+								<div class="Expected">
+									<div class="ExpectedCirle">
+										<span class="canyu">0</span>
+										<!-- <p>ETH</p> -->
+									</div>
+									<span data-text="ETHPLAY_language_text161">当前参与/ETH</span>
+									<ul>
+										<li>
+											<div class="ExpectedLiLeft"><img src="img/Expected01.png"/><span data-text="ETHPLAY_language_text162">矿池额度</span></div>
+											<div class="ExpectedLiRight"><span class="ExpectedRed kuangchi">0</span><span> ETH</span></div>
+										</li>
+										<li>
+											<div class="ExpectedLiLeft"><img src="img/Expected02.png"/><span data-text="ETHPLAY_language_text163">可参与额度</span></div>
+											<div class="ExpectedLiRight"><span class="ExpectedRed kecanyu">0.00</span><span> ETH</span></div>
+										</li>
+										<li>
+											<div class="ExpectedLiLeft"><img src="img/Expected03.png"/><span data-text="ETHPLAY_language_text164">累计参与</span></div>
+											<div class="ExpectedLiRight"><span class="ExpectedRed leijicanyu">0.00</span><span> ETH</span></div>
+										</li>
+										<li class="joinR">
+											<div class="ExpectedLiLeft"><img src="img/Fee.png"/><span><p data-text="ETHPLAY_language_text22">参与记录</p></div>
+											<div class="ExpectedLiRight"><span class="ExpectedRed" data-text="ETHPLAY_language_text236">详情</span></div>
+										</li>
+									</ul>
+									<button style="margin-top: 0;" data-text="ETHPLAY_language_text20" >再次参与</button>
+								</div>
+							</div>
+							<div class="PlayGameContent01-06">
+								<div class="imgRight">							
+									<img src="img/Re.png" />
+								</div>
+								<div class="PlayGameContent01-06Box">
+									<h3 data-text="ETHPLAY_language_text70">本轮游戏已结束</h3>
+									<!-- <span>数据统计中</span> -->
+									<!-- <button>
+										<span data-text="ETHPLAY_language_text67">领取</span>
+									</button> -->
+									<ul>										
+										<!-- <li><span data-text="ETHPLAY_language_text148">补偿额度</span><span class="makeUpNumber">0 EPK</span><button class="buchangedu" data-text="ETHPLAY_language_text33">领取</button></li> -->
+										<li><span data-text="ETHPLAY_language_text182">幸运奖</span><span class="lucky">0 ETH</span><button class="lack" data-text="ETHPLAY_language_text33">领取</button></li>
+									</ul>
+								</div>
+							</div>
+							<div class="PlayGameContent01-07">
+								<h2 data-text="ETHPLAY_language_text233">补偿领取</h2>
+								<div class="timeDown">
+									<img src="img/TimeDown.png" />
+									<span data-text="ETHPLAY_language_text234" data-textType="html">EPK补偿倒计时</span>
+									<p>00:00:00</p>
+								</div>
+								<div>
+									<span data-text="ETHPLAY_language_text235">当前可领取数量:</span>
+									<span class="TotalCompensation"> </span>
+								</div>
+							</div>
+							
+						</div>
+						<div class="PlayGameContent02 borderR">
+							<div class="Content02Select">
+								<div>
+									<span data-text="ETHPLAY_language_text273">合约交易</span>
+									<div class="Content02SelectActive"></div>
+								</div>
+								<div>
+									<span data-text="ETHPLAY_language_text217">创世兑换</span>
+									<div></div>
+								</div>
+							</div>
+							<div class="Content02SelectExchange">
+								<div class="Creation">
+									<div class="ContractTransactionLeft">
+										<div class="BuySellSelect">
+											<div class="Buy BuySellActive" data-text="ETHPLAY_language_text274">买入</div>
+											<div class="Sell" data-text="ETHPLAY_language_text275">卖出</div>
+										</div>
+										<div class="ContractTransactionP">
+											<span data-text="ETHPLAY_language_text276">兑换比例(EPK/ETH)</span>
+											<div class="changeProp"></div>
+										</div>
+										<div class="ContractTransactionP ContractTransactionI">
+											<span data-text="ETHPLAY_language_text277">买入数量</span>
+											<div>
+												<input type="text" onkeyup="value=value.replace(/[^\d.]/g,'')" />
+												<span>ETH</span>
+											</div>
+										</div>
+										<div class="EPKBalance">
+											<span data-text="ETHPLAY_language_text279">当前可用</span>
+											<div>
+												<span class="currentCurrencyNumber"></span>
+												<span class="currentCurrency">EPK</span>
+											</div>
+										</div>
+										<button data-text="ETHPLAY_language_text274">买入</button>
+									</div>
+									<div class="ContractTransactionRight">
+										<div class="ContractTransactionRightTitle">
+											<img src="img/Re.png" />
+											<span data-text="ETHPLAY_language_text280">买入详情</span>
+										</div>
+										<div class="Timing">
+											<div class="TimingTitle">
+												<span data-text="ETHPLAY_language_text289">时序</span>
+												<span data-text="ETHPLAY_language_text282">数量</span>
+											</div>
+											<div class="CTListBox">
+												
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="LockedWarehouse">
+									<div class="Content02Remaining">
+										<div class="Content02Title">
+											<div class="Content02TitleLeft">
+												<p></p>
+												<span data-text="ETHPLAY_language_text193">共振池总量：</span>
+											</div>
+											<div class="Content02TitleRight">
+												<span class="total"></span>
+												<span>&nbsp;EPK</span>
+											</div>
+										</div>
+										<div class="Content02RemainingContent">
+											<div class="exchangeCurrentRound">
+												<div><span class="prop"></span></div>
+												<span class="Content02RemainingPercentage"></span>
+											</div>
+											<div class="exchangeNextRound">
+												<div><span class="prop01"></span></div>
+												<span>100%</span>
+											</div>
+										</div>
+									</div>
+									<div class="Content02Exchange">
+										<div class="Content02Title">
+											<div class="Content02TitleLeft">
+												<p></p>
+												<span data-text="ETHPLAY_language_text192">共振池剩余：</span>
+												<span class="Remaining"> </span>
+											</div>
+										</div>
+										<div class="Content02Input">
+											<div>
+												<div>
+													<input type="text" class="exchangeEth" onkeyup="value=value.replace(/[^\d.]/g,'')" value="0" />
+													<span>ETH</span>
+												</div>
+												<img src="img/Content02Exchange.png" />
+												<div>
+													<div class="Content02InputDiv">0</div>
+													<span>EPK</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="ESKButton">							
+										<button data-text="ETHPLAY_language_text31">发送</button>
+										<div>
+											<img src="img/questionMark.png" />
+											<span data-text="ETHPLAY_language_text194">了解EPK</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="PlayGameContent03 borderR">
+							<div class="PlayGameContent03-01">
+								<div class="income01">
+									<!-- <div class="income01Left">
+										<img src="img/click.png" />
+										<span data-text="ETHPLAY_language_text143">领取补偿</span>
+									</div> -->
+									<div class="income01Right">
+										<img src="img/Re.png" />
+										<span data-text="ETHPLAY_language_text144">收益记录</span>
+									</div>
+								</div>
+								<div class="income02">
+									<div>
+										<div>	
+											<canvas id="c"></canvas>
+											<span>0</span>
+										</div>
+										<span data-text="ETHPLAY_language_text32">可领取收益</span>
+									</div>
+									<!-- <div class="income02">
+										<span data-text="ETHPLAY_language_text32">可领取收益</span>
+										<span>0.00 ETH</span>
+									</div> -->
+									<ul class="income03">
+										<li>
+											<div class="income03Left"><img src="img/income03Img01.png"/><span data-text="ETHPLAY_language_text35">静态收益</span></div>
+											<div class="income03Right"><span>0.00</span><span> ETH</span></div>
+										</li>
+										<li>
+											<div class="income03Left"><img src="img/income03Img02.png"/><span data-text="ETHPLAY_language_text34">推广收益</span></div>
+											<div class="income03Right"><span>0.00</span><span> ETH</span></div>
+										</li>
+										<li>
+											<div class="income03Left"><img src="img/income03Img03.png"/><span data-text="ETHPLAY_language_text37">矿池额度</span></div>
+											<div class="income03Right"><span>0.00</span><span> ETH</span></div>
+										</li>
+										<li>
+											<div class="income03Left"><img src="img/income03Img04.png"/><span data-text="ETHPLAY_language_text38">累计收益</span></div>
+											<div class="income03Right"><span>0.00</span><span> ETH</span></div>
+										</li>
+										<li>
+											<div class="income03Left">
+												<img src="img/Fee.png"/>
+												<div class="income04Fee">
+													<span data-text="ETHPLAY_language_text154">所需手续费: </span>
+													<span>0</span>
+													<span> EPK</span>
+												</div>
+											</div>
+											<div class="income03Right"><span class="exchangeEPK" data-text="ETHPLAY_language_text200">获取EPK</span></div>
+										</li>
+									</ul>
+								</div>
+								<div class="income04">
+									<!-- <div class="income04Fee">
+										<span data-text="ETHPLAY_language_text154">所需手续费: </span>
+										<span>0</span>
+										<span> EPK</span>
+									</div> -->
+									<button data-text="ETHPLAY_language_text33">领取</button>
+									<!-- <span class="exchangeEPK" data-text="ETHPLAY_language_text135">EPK不足？点击获取</span> -->
+								</div>
+							</div>
+							<div class="PlayGameContent03-02">
+								
+								<!-- <button>领取</button> -->
+							</div>
+						</div>
+						<div class="PlayGameContent04 borderR">
+							<div class="PlayGameContent04-01">
+								<div class="Content04Img">
+									<span>0</span>
+									<div>
+										<span>100</span>
+										<!-- <img src="img/energy1.png" />
+										<img class="Content04ImgActive" src="img/energy2.png" /> -->
+										<div id="sector">
+											
+											<div class="sectorText">
+												<p data-text="ETHPLAY_language_text245">能量值</p>
+												<span>100%</span>
+											</div>
+										</div>
+									</div>
+									<span>200</span>
+								</div>
+								<ul>
+									<li>
+										<div><img src="img/inviteStatus01.png"/><span data-text="ETHPLAY_language_text48">玩家身份</span></div>
+										<span>&nbsp;</span>
+										<img class="levImg" src="" />
+										<section></section>
+									</li>
+									<li>
+										<div><img src="img/inviteStatus02.png"/><span data-text="ETHPLAY_language_text151">我的邀请码</span></div>
+										<span>&nbsp;</span>
+										<p data-text="ETHPLAY_language_text195">复制</p>
+										<section></section>
+									</li>
+									<li>
+										<div><img src="img/inviteStatus03.png"/><span data-text="ETHPLAY_language_text51">邀请链接</span></div>
+										<p data-text="ETHPLAY_language_text195">复制</p>
+										<section></section>
+									</li>
+									<li>
+										<div><img src="img/inviteStatus04.png"/><span data-text="ETHPLAY_language_text153">邀请列表</span></div>
+										<p data-text="ETHPLAY_language_text196">查看</p>
+										<section></section>
+									</li>
+									<li>
+										<div><img src="img/inviteStatus05.png"/><span data-text="ETHPLAY_language_text50">我的邀请人</span></div>
+										<span>&nbsp;</span>
+										<img class="yee" src="img/inviteStatus06.png"/>
+										<section></section>
+									</li>
+									<li>
+										<div><img src="img/inviteStatus05.png"/><span data-text="ETHPLAY_language_text242">领取EPK</span></div>
+										<p data-text="ETHPLAY_language_text33">领取</p>
+										<section></section>
+									</li>
+									<li>
+										<div><img src="img/inviteStatus07.png"/><span>领取补偿额度</span></div>
+										<span>&nbsp;</span>
+										<p data-text="ETHPLAY_language_text33">领取</p>
+										<section></section>
+									</li>
+								</ul>
+							</div>
+							<div class="PlayGameContent04-02">
+								<img class="out" src="img/out.png" />
+								<img class="levImg" src="" />
+								<span data-text="ETHPLAY_language_text246">当前等级</span>
+								<div class="LevUpText" data-text="ETHPLAY_language_text244">不用等待,即刻升级M1</div>
+								<div class="LevUpDetails"><img src="img/questionMark.png"/><span data-text="ETHPLAY_language_text249">了解详情</span></div>
+								<button data-text="ETHPLAY_language_text247">即刻升级到M1</button>
+							</div>
+							<div class="PlayGameContent04-03">
+								<img src="img/out.png" />
+								<ul class="titleSwitch">
+									<li class="titleSwitchActive" data-text="ETHPLAY_language_text243">补偿EPK</li>
+									<li data-text="ETHPLAY_language_text218">专享兑换</li>
+								</ul>
+								
+								<div class="MakeUpReceive">									
+									<ul class="income06">
+										<li><span data-text="ETHPLAY_language_text185">补偿总量</span><span>0 EPK</span></li>
+										<li><span data-text="ETHPLAY_language_text146">等待释放</span><span>0 EPK</span></li>
+										<li><span data-text="ETHPLAY_language_text147">明日释放</span><span>0 EPK</span></li>
+										<li><span data-text="ETHPLAY_language_text149">当前可领取</span><span>0 EPK</span></li>
+									</ul>
+									<button data-text="ETHPLAY_language_text33">领取</button>
+									<div><img src="img/Re.png"/><span data-text="ETHPLAY_language_text248">记录详情</span></div>
+								</div>
+								<div class="ExchangeReceive">	
+									<ul class="income06">
+										<li><span data-text="ETHPLAY_language_text221">锁仓余额</span><span class="LockedWarehouseBalance1">0 EPK</span></li>
+										<li><span data-text="ETHPLAY_language_text149">当前可领取</span><span class="canWithdrawTokenTotal1">0 EPK</span></li>
+									</ul>
+									<button data-text="ETHPLAY_language_text33">领取</button>
+									<div><img src="img/Re.png"/><span data-text="ETHPLAY_language_text248">记录详情</span></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			
+			<div class="DataStatisticsSection section">
+				<div class="DataSectionTop">
+					<div class="DataStatistics box">
+						<div class="BoxTitie">
+							<span  data-text="ETHPLAY_language_text03">数据统计</span>
+							<div class="titleLine"></div>
+						</div>
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="DataStatisticsText">							    		
+										<img src="img/circle1.png"/>
+										<span class="GameOverTime">0</span>
+									</div>
+									<span data-text="ETHPLAY_language_text237">开奖时间</span>
+								</div>
+								<!-- <div class="swiper-slide">
+									<div class="DataStatisticsText">							    		
+										<img src="img/circle2.png"/>
+										<span class="zijinchi">0</span>
+									</div>
+									<span data-text="ETHPLAY_language_text55" data-textType="html">累计参与/ETH</span>
+								</div> -->
+								<div class="swiper-slide">
+									<div class="DataStatisticsText">
+										<img src="img/circle3.png"/>
+										<span class="fafangzijin">0</span>
+									</div>
+									<span data-text="ETHPLAY_language_text26">当前兑换比例</span>
+								</div>
+								<div class="swiper-slide">
+									<div class="DataStatisticsText">
+										<img src="img/circle4.png"/>
+										<span class="ranshaoEPK">0</span>
+									</div>
+									<span data-text="ETHPLAY_language_text105" data-textType="html">累计燃烧/EPK</span>
+								</div>
+								<div class="swiper-slide">
+									<div class="DataStatisticsText">
+										<img src="img/circle5.png"/>
+										<span class="RoundETH">0</span>
+									</div>
+									<span data-text="ETHPLAY_language_text232" data-textType="html">资金池/ETH</span>
+								</div>
+								<div class="swiper-slide">
+									<div class="DataStatisticsText">
+										<img src="img/circle6.png"/>
+										<span class="luckA">0</span>
+									</div>
+									<span data-text="ETHPLAY_language_text238" data-textType="html">资金池/ETH</span>
+								</div>
+								<div class="swiper-slide">
+									<div class="DataStatisticsText">
+										<img src="img/circle7.png"/>
+										<span class="luckB">0</span>
+									</div>
+									<span data-text="ETHPLAY_language_text239" data-textType="html">资金池/ETH</span>
+								</div>
+							</div>
+							<!--<div class="circleChart" id="1"><div class="chartText"><span class="canyuwanjia"></span><span data-text="ETHPLAY_language_text59" data-textType="html">参与玩家/人</span></div></div>
+							<div class="circleChart" id="2"><div class="chartText"><span class="zijinchi"></span><span data-text="ETHPLAY_language_text55" data-textType="html">累计参与/ETH</span></div></div>
+							<div class="circleChart" id="3"><div class="chartText"><span class="fafangzijin"></span><span data-text="ETHPLAY_language_text61" data-textType="html">累计支付/ETH</span></div></div>-->
+							
+						</div>
+					</div>
+				</div>
+				
+				<div class="AssetDetails section">
+					<!-- <div class="BoxTitie">
+						<span>资产详情</span>
+						<div class="titleLine"></div>
+					</div>
+					
+					<div class="Content02WalletBox box">
+						<div class="Content02Wallet">
+							<div class="Content02WalletTop copybtn">
+								<img src="img/Content02WalletTop01.png" />
+								<span class="Content02Address"></span>
+								<img src="img/Content02WalletTop02.png" />
+							</div>
+							<div class="Content02WalletBottom">
+								<div>
+									<img src="img/Content02WalletBottom01.png" />
+									<div><span class="eth">0</span><span> ETH</span></div>
+								</div>
+								<div>
+									<img src="img/Content02WalletBottom02.png" />
+									<div><span class="epc">0</span><span> EPK</span></div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					
+					<div class="notice">
+						<div class="noticeContent box">
+							<ul>
+								<li class="noticeContentActive" data-text="ETHPLAY_language_text241">最新参与</li>
+								<li data-text="ETHPLAY_language_text240">幸运玩家</li>
+							</ul>
+							<div class="newJoin">
+								<img src="img/noticeContentImg.png" />
+								<div>
+									
+								</div>
+								<!-- <div>								
+									<div>0x0000****11688</div>
+									<div>0.5ETH</div>
+									<div>2019.12.9</div>
+								</div> -->
+							</div>
+							<div class="luckyReward">
+								<img src="img/noticeContentImg.png" />
+								<div>
+									<!-- <div>0x0000****11688</div>
+									<div>1.0ETH</div>
+									<div>2019.12.9</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="Partner box">
+					<div class="BoxTitie">
+						<span data-text="ETHPLAY_language_text187">渠道合作</span>
+						<div class="titleLine"></div>
+					</div>
+					<div class="PartnerList">
+						<a href="https://www.token.im/"><img src="img/Partner01.png"/><span>imToken</span></a>
+						<a href="https://www.huobiwallet.com/"><img src="img/Partner02.png"/><span>huobi Wallet</span></a>
+						<a href="https://trustwallet.com/"><img src="img/Partner03.png"/><span>Trust Wallet</span></a>
+						<a href="http://mathwallet.net/cn/?from=singlemessage"><img src="img/Partner04.png"/><span>Math Wallet</span></a>
+						<a href="https://metamask.io/"><img src="img/Partner05.png"/><span>MetaMask</span></a>	
+					</div>
+				</div>
+				
+				<div class="warning box">
+					<div class="warningBox">
+						<img src="img/warningLogo.png" width="100px" />
+						<div class="warningText">
+							<div class="BoxTitie">
+								<span data-text="ETHPLAY_language_text62">风险提示：</span>
+								<div class="titleLine"></div>
+							</div>
+							<p>
+								<img src="img/warningLogo.png" />
+								<span data-text="ETHPLAY_language_text63" style="font-size: 13px">ETH Player是一个完全去中心化的金融游戏，存在不确定的风险因素，请您熟知后理性参与！</span>
+							</p>
+						</div>
+						<ul>
+							<li class="ContractE"><a href="./Contract.html" ><img src="img/warningC.png"/><span data-text="ETHPLAY_language_text106">合约介绍</span></a></li>
+							<li class="Etherscan"><a href="https://cn.etherscan.com/" ><img src="img/warningE.png"/><span>Etherscan</span></a></li>
+							<li class="Github"><a href="https://github.com/msSj7svHwsdlKt0G/ETH-Player" ><img src="img/warningG.png"/><span>Github</span></a></li>
+							<li class="Group"><a><img src="img/warningB.png"/><span>Group</span></a></li>
+						</ul>
+						<div class="warningQcode">
+							<img src="img/warningQcode.png" width="120px" />
+							<span data-text="ETHPLAY_language_text107">ETH Player电报群</span>
+						</div>
+					</div>
+				</div>
+				
+				<ul class="warningList">
+					<li class="ContractE"><a href="./Contract.html" ><img src="img/warningC.png"/><span data-text="ETHPLAY_language_text106">合约介绍</span></a></li>
+					<li class="Etherscan"><a href="https://cn.etherscan.com/" ><img src="img/warningE.png"/><span>Etherscan</span></a></li>
+					<li class="Github"><a href="https://github.com/msSj7svHwsdlKt0G/ETH-Player" ><img src="img/warningG.png"/><span>Github</span></a></li>
+					<li class="Group"><a><img src="./img/warningB.png"/><span>Group</span></a></li>
+				</ul>
+				<center class="floot">
+					<img src="img/c.png"/>
+					<span data-text="ETHPLAY_language_text64">MLM DeFi. All rights reserved</span>
+				</center>
+			</div>
+		</div>
+		
+		<!--参与记录-->		
+		<div class="PlayGameContent01-05">
+			<div class="Re">
+				<div class="ReDiv"><span data-text="ETHPLAY_language_text22" >参与记录</span><p><img src="img/out.png"/></p></div>
+				<div class="ReListTitle">
+					<span data-text="ETHPLAY_language_text18">参与金额</span><span data-text="ETHPLAY_language_text24">参与时间</span>
+				</div>
+				<ul class="ReList">
+				</ul>
+			</div>
+		</div>
+		
+		<!--邀请码-->
+		<div class="PlayGameContent01-02">
+			<div class="qualifications">
+				<img src="img/out.png" />
+				<p data-text="ETHPLAY_language_text131">欢迎来到ETH Player</p>
+				<div class="qualificationsCode bindCode">
+					<span data-text="ETHPLAY_language_text132">请绑定邀请人</span>
+					<div style="font-size: 30px">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<input type="text" onKeyUp="value=value.replace(/[\W]/g,'')" maxlength="6" />
+					</div>
+				</div>
+				<!-- <span class="defaultCode">使用默认邀请码</span> -->
+				<div class="qualificationsCode generateCode">
+					<span data-text="ETHPLAY_language_text133">请输入您要生成的邀请码</span>
+					<div style="font-size: 30px">
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<input type="text" onKeyUp="value=value.replace(/[\W]/g,'')" maxlength="6" />
+					</div>
+				</div>
+				<button data-text="ETHPLAY_language_text42">确定</button>
+			</div>
+		</div>
+		
+		<!-- 买入订单 -->
+		<div class="ShellOrder">
+			<div class="ShellOrderBox">
+				<div class="ShellOrderBoxTitle">
+					<span></span>
+					<img src="img/out.png" />
+				</div>
+				<div class="OrderBoxContent">
+					<div class="ShellOrderBoxContent">
+						<!-- <div class="ShellOrderBoxList">
+							<div class="ShellOrderBoxListLeft">
+								<div>
+									<p>订单号</p>
+									<span>001</span>
+								</div>
+								<div>
+									<p>总量</p>
+									<span>10000 EPK</span>
+								</div>
+								<div>
+									<p>剩余</p>
+									<span>7000 EPK</span>
+								</div>
+							</div>
+							<div class="ShellOrderBoxListRight">
+								<div>
+									<div>2019.12.26 15:43:00</div>
+									<span>3000:1(EPK/ETH)</span>
+									<p>排队中</p>
+								</div>
+								<img src="" />
+							</div>
+						</div> -->
+					</div>
+					<div class="OrderDetail">
+						<!-- <div class="OrderDetailList">
+							<div class="OrderDetailListLeft">
+								<span>3000:1(EPK/ETH)</span>
+								<span>2019.12.11 20:00:59</span>
+								
+							</div>
+							<div class="OrderDetailListRight">
+								<span>+ 9000 EPK</span>
+								<span>+ 3 ETH</span>
+								<span>交易</span>
+							</div>
+						</div> -->
+					</div>
+					<div class="BuyOrderContent">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 游戏规则 -->
+		<div class="GameRule">
+			<div class="GameRuleBox">
+				<h2 data-text="ETHPLAY_language_text13">游戏规则</h2>
+				<div data-textType="html">
+					<div data-text="ETHPLAY_language_text252">ETH Player是一个完全去中心化的金融游戏，存在不确定的风险因素，请您熟知以下规则后理性参与：</div>
+					<p data-text="ETHPLAY_language_text253">一、ETH Player风险准则：</p>
+					<ul>
+						<li><div>1</div><span data-text="ETHPLAY_language_text254">不准向他人做任何形式的承诺和保障；</span></li>
+						<li><div>2</div><span data-text="ETHPLAY_language_text255">不准夸大事实向他人宣传；</span></li>
+						<li><div>3</div><span data-text="ETHPLAY_language_text256">不准收取任何会员的资金；</span></li>
+						<li><div>4</div><span data-text="ETHPLAY_language_text257">不准用任何特殊协议吸引他人；</span></li>
+						<li><div>5</div><span data-text="ETHPLAY_language_text258">充分了解以后方可与他人分享；</span></li>
+						<li><div>6</div><span data-text="ETHPLAY_language_text259">不能破坏以上任何条例。</span></li>
+					</ul>
+					<p data-text="ETHPLAY_language_text260">二、ETH Player玩法规则：</p>
+					<ul>
+						<li><div>1</div><span data-text="ETHPLAY_language_text261">每日静态分红比例由图灵算法决定；</span></li>
+						<li><div>2</div><span data-text="ETHPLAY_language_text262">参与方式：100%ETH+5%EPK；</span></li>
+						<li><div>3</div><span data-text="ETHPLAY_language_text263">分红收益+推广收益3倍出局,需再次参与才能享受相关收益；</span></li>
+						<li><div>4</div><span data-text="ETHPLAY_language_text264">小奖池约为每日上午8点开奖，由每天参与20ETH的5名随机玩家平均分配；</span></li>
+						<li><div>5</div><span data-text="ETHPLAY_language_text265">大奖池倒计时36小时结束，奖励给最后500名玩家，第1名：100倍，第2-6倍：5倍，第7名以后3倍；</span></li>
+						<li><div>6</div><span data-text="ETHPLAY_language_text266">当ETH Player出现系统性风险的时候，预警线将会做出提醒并根据预警线安全系数而决定到账额度；</span></li>
+					</ul>
+				</div>
+				<span data-text="ETHPLAY_language_text157">请仔细阅读游戏规则</span>
+				<button data-text="ETHPLAY_language_text158">同意</button>
+			</div>
+		</div>
+		
+		<!-- 收益记录 -->
+		<div class="incomeRe">
+			<div class="incomeReBox">
+				<div class="incomeReTitle">
+					<span data-text="ETHPLAY_language_text144">收益记录</span>
+					<img src="img/out.png" />
+				</div>
+				<div class="incomeReContentBox">
+					<ul class="incomeReContent">
+						<!-- <li>
+							<div>
+								<span>M1</span>
+								<span>2019.07.05</span>
+								<span>+0.5500 ETH</span>
+							</div>
+							<p class="incomeReContentLine"></p>
+						</li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 底部二维码 -->
+		<div class="GroupCoverLayer">
+			<img src="./img/warningQcode.png" />
+			
+			<div class="BoxTitie">
+				<span data-text="ETHPLAY_language_text216">扫码进入社群</span>
+			</div>
+		</div>
+		
+		
+		<!-- 补偿记录 -->
+		<div class="compensate01">
+			<div class="compensate01Box">
+				<div class="compensate01BoxTitle">
+					<img src="img/out.png" />
+					<span data-text="ETHPLAY_language_text145">补偿记录</span>
+				</div>
+				<ul class="compensate01Content">
+					<!-- <li><span>2019-07-05</span><span>补偿领取</span><span>8546 EPK</span></li> -->
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!-- 邀请列表 -->
+		<div class="inviteList">
+			<div class="inviteListBox">
+				<div class="inviteListBoxTitle">
+					<img src="img/out.png" />
+					<span data-text="ETHPLAY_language_text153">邀请列表</span>
+				</div>
+				<ul class="inviteListContent">
+					<!-- <li><span>我的伙伴</span><span>伙伴团队人数</span><span>创建时间</span><span>累计参与ETH</span></li>
+					<li><span>1</span><span>1</span><span>1</span><span>1</span></li> -->
+				</ul>
+			</div>
+		</div>
+		
+		
+		<!-- 右下角钱包 -->
+		<div class="MoneyFloatBox">
+			<div data-text="ETHPLAY_language_text58">钱包余额</div>
+			<!--<span class="MoneyFloatBoxLine"></span>-->
+			<div><span>ETH</span><span class="eth">0.00</span></div>
+			<span class="MoneyFloatBoxLine"></span>
+			<div><span>EPK</span><span class="epc">0.00</span></div>
+			<img src="img/min.png" />
+		</div>
+		<img src="img/wallet.png" class="showWallet" />
+		
+		<!-- 交易状态 -->
+		<ul class="TransationStatus">
+			<!--<li class="animated bounceInDown"><img src="img/caveat.png"/><span>兑换中</span><p></p></li>
+			<li class="animated bounceInDown"><img src="img/caveat.png"/><span>交易中</span><p></p></li>-->
+		</ul>
+		
+		<!--等级-->
+		<!-- <div class="zhezhaoceng">			
+			<div class="lev">
+				<span>
+					<span data-text="ETHPLAY_language_text75">恭喜您晋升</span>
+					<span>M1</span>
+					<span data-text="ETHPLAY_language_text76">请确认升级！</span>
+				</span>
+				<button data-text="ETHPLAY_language_text74">确认</button>
+			</div>
+		</div> -->
+		
+		<!-- 幸运奖 -->
+		<!-- <div class="zhezhaoceng">
+			<div class="LuckyPrize">
+				<span>
+					<span>恭喜您成为本轮游戏</span>
+					<span>幸运玩家</span>
+					<span>奖励 100 ETH</span>
+				</span>
+				<button>领取</button>
+			</div>
+		</div> -->
+		
+		<div class="AboutEPKBox">
+			<div class="AboutEPK">
+				<img src="img/out.png" />
+				<h3 data-text="ETHPLAY_language_text197">关于EPK</h3>
+				<p data-text="ETHPLAY_language_text25">EPK（风云令）是ETH Player链上游戏系统内的通行令牌，总量10亿，其中9亿锁仓于合约地址，仅在启动补偿方案时自动补偿给玩家；剩余1亿中的2100万用于创世兑换，7900万将根据市场发展而逐步流通。用户在解锁账号、领取收益消耗的EPK将1:1销毁，直至EPK市场流通量恒定1000万枚。</p>
+			</div>
+		</div>
+		
+		<div class="LockedWarehouseBox">
+			<div class="AboutEPK">
+				<img src="img/out.png" />
+				<h3 data-text="ETHPLAY_language_text218">创世兑换</h3>
+				<p data-text="ETHPLAY_language_text225" data-textType="html">1、可兑换总量：1800万，首期可兑换600万；<br/>2、首期兑换比例为1:6000，一个地址只能兑换一次；<br/>3、1ETH起开始兑换，且必须为1ETH的倍数；<br/>4、参与兑换的ETH,全部进入ETH Player合约地址；<br/>5、兑换的EPK每日释放5%，可以累计一次性领取，共计20天释放完；<br/>6、后期开放兑换的数量、时间和兑换比例待定；</p>
+			</div>
+		</div>
+		
+		
+		<div class="installWalletBox">
+			<div class="installWallet">
+				<p data-text="ETHPLAY_language_text207">提示</p>
+				<div class="installWalletText">
+					<div></div>
+					<span data-text="ETHPLAY_language_text208">电脑访问请使用谷歌浏览器并安装插件</span>
+					<span data-text="ETHPLAY_language_text209">手机访问请安装imToken或MathWallet</span>
+				</div>
+				<div class="installWalletDownload">
+					<a href="https://www.token.im/"><div><img src="img/Partner01.png"/><span>imToken</span></div></a>
+					<a href="https://www.huobiwallet.com/"><div><img src="img/Partner02.png"/><span>huobi</span></div></a>
+					<a href="https://trustwallet.com/"><div><img src="img/Partner03.png"/><span>Trust</span></div></a>
+					<a href="http://mathwallet.net/cn/?from=singlemessage"><div><img src="img/Partner04.png"/><span>Math</span></div></a>
+					<a href="https://metamask.io/"><div><img src="img/Partner05.png"/><span>MetaMask</span></div></a>	
+				</div>
+				<img src="img/out.png" />
+			</div>
+		</div>
+		
+		<div class="buyLev">
+			<div class="buyLevBox">
+				<img src="img/out.png" />
+				<p>M1身份兑换说明</p>
+				<div data-textType="html"  data-text="ETHPLAY_language_text251">
+					1-10名:10ETH</br>
+					11-20名:20ETH</br>
+					21-30名:30ETH</br>
+					31-40名:40ETH</br>
+					40名以后:50ETH
+				</div>
+			</div>
+		</div>
+		
+		<!-- loading -->
+		<div class="PublicCoverLayer">
+			<div class="PublicCubeGrid cube-grid">
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+				<div class="sk-cube"></div>
+			</div>
+		</div>
+		
+			
+	</body>
+</html>
+<!-- <script type="text/javascript" src="https://cdn.bootcss.com/eruda/1.5.4/eruda.js" ></script>
+<script>eruda.init();</script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script type="text/javascript" src="js/public.js" ></script>
+<!-- <script type="text/javascript" src="js/i18n.js" ></script> -->
+<script  src='https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js' > </script>
+<script type="text/javascript" src="js/language.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+<script type="text/javascript" src="js/slider.js" ></script>
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/index.js" ></script>
